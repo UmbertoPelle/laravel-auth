@@ -35,4 +35,13 @@ class LoggedController extends Controller{
     $emp -> update($data);
     return redirect() -> route('emp-index');
   }
+
+    public function store(Request $request){
+
+      $data = $request -> all();
+      $emp = Employee::create($data);
+
+      return redirect() -> route('emp-index');
+    }
+
 }

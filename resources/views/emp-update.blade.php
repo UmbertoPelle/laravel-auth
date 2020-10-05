@@ -22,6 +22,10 @@
                     <input type="date" name="date_of_birth" value="{{ $emp -> date_of_birth}}">
                   </div>
                   <div>
+                    <label for="private_code">Private Code:</label><br>
+                    <input type="text" name="private_code" value="{{ $emp -> private_code}}">
+                  </div>
+                  <div>
                     Location:
                   </div>
                   <select name="{{$emp -> location_id}}">
