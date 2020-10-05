@@ -28,7 +28,7 @@
                       @endauth
                     </ol>
                     @auth
-                      <a class="btn btn-primary" href="#">edit</a>
+                      <a class="btn btn-primary" href={{ route('emp-edit', $emp -> id )}}>edit</a>
                       <a class='btn btn-danger'href={{ route('emp-delete', $emp -> id)}}>delete</a>
                     @endauth
                 </div>
