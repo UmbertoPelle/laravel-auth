@@ -8,6 +8,10 @@
                 <div class="card-header">Employees:</div>
 
                 <div class="card-body">
+                  @auth
+                  @else
+                    <h3>You need loggin to create a new Employee</h3>
+                  @endauth
                     <ol>
                       @foreach ($emps as $emp)
                         <li>

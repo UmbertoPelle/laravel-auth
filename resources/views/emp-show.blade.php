@@ -30,6 +30,8 @@
                     @auth
                       <a class="btn btn-primary" href={{ route('emp-edit', $emp -> id )}}>edit</a>
                       <a class='btn btn-danger'href={{ route('emp-delete', $emp -> id)}}>delete</a>
+                    @else
+                      <h3>You need loggin to edit</h3>
                     @endauth
                 </div>
             </div>
